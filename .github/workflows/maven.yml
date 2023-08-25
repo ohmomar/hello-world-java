@@ -41,3 +41,5 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
       
+    - name: Push Docker Image
+      run: docker push ohmomar/hello-world-java-demo:0.0.3.Release
